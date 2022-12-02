@@ -46,9 +46,100 @@ You slowly wake up to see your cat perched at the top of the staircase, meowing 
  </tw-passagedata><tw-passagedata pid="2" name="next" tags="" position="775,300" size="100,100">You look down and something’s not right: your hands are translucent, you feel light, and as your cat walks over, you find that it struts right through you. 
 
 
-[[“Am I a ghost?”]]</tw-passagedata><tw-passagedata pid="3" name="“Am I a ghost?”" tags="" position="925,300" size="100,100"></tw-passagedata><tw-passagedata pid="4" name="header" tags="header" position="425,300" size="100,100">(append: ?SideBar)[
+[[“Am I a ghost?”]]</tw-passagedata><tw-passagedata pid="3" name="“Am I a ghost?”" tags="" position="925,300" size="100,100">
+You’ve just woken up to discover you’re a ghost, but what led to your untimely demise? Using the map, enter different areas of the house and find clues to refresh your memory about what happened last night. Your trusty cat will accompany you around the house as you try to bust the case of why you’re now a ghost. 
+
+[[continue]]</tw-passagedata><tw-passagedata pid="4" name="header" tags="header" position="425,300" size="100,100">(append: ?SideBar)[
 (link-repeat: &quot;Open Map&quot;) [(alert:&quot;map\n&quot; + $map)]
-]</tw-passagedata></tw-storydata>
+]</tw-passagedata><tw-passagedata pid="5" name="Call Cat Again" tags="" position="1075,300" size="100,100">“Come here, Kitty, now!”
+Your cat ignores you again and walks toward the phone and sits on a button starting the voicemail.
+
+[[Check Voicemail]] </tw-passagedata><tw-passagedata pid="6" name="Call cat" tags="" position="1075,425" size="100,100">“Come here, Kitty”
+Kitty is a little stubborn, try calling one more time.
+
+[[Call Cat Again]] 
+</tw-passagedata><tw-passagedata pid="7" name="continue" tags="" position="925,425" size="100,100">Let’s get to busting this case. Where did your cat go again? Try calling for them
+
+[[Call cat]]</tw-passagedata><tw-passagedata pid="8" name="Check Voicemail" tags="" position="1200,300" size="100,100">“You have two voicemails:&quot;
+
+Click which one you would like to check first.
+
+[[Voicemail 1]] 
+[[Voicemail 2]] </tw-passagedata><tw-passagedata pid="9" name="Voicemail 1" tags="" position="1350,300" size="100,100">Voicemail 1: Hi Sweetums, you know I didn’t mean a word of what I said at the party right? I know we had a rough break up but I would never hurt you over it, that would be wayyyy too dramatic of me. I mean sure you’re an absolute jerk and I don’t know why I bother trying to stay friends with your no good- *Deep breath* God I’m getting all worked up again and you’re not even here. I’ll talk to you later. Bye.
+
+[[Voicemail 2]] 
+
+[[Exit Voicemail]] </tw-passagedata><tw-passagedata pid="10" name="Voicemail 2" tags="" position="1350,425" size="100,100">Voicemail 2: Hey Cuz, I didn’t say anything last night ‘cause it was your birthday party, but  this is like the 100th time I’ve called you. You know that you owe me big time, pick up before I do something we’re both gonna regret. I need my money now.
+
+[[Voicemail 1]] 
+
+[[Exit Voicemail]] </tw-passagedata><tw-passagedata pid="11" name="Exit Voicemail" tags="" position="1500,350" size="100,100">Kitty: “You’re not very popular are you?”
+
+[[&quot;You can talk?&quot;]]</tw-passagedata><tw-passagedata pid="12" name="&quot;You can talk?&quot;" tags="" position="1625,350" size="100,100">Kitty: “Sure can, you just haven’t been able to understand me, but now that you’re finally dead you can!”
+
+[[MC: “You seem a bit too happy about this.”]]</tw-passagedata><tw-passagedata pid="13" name="MC: “You seem a bit too happy about this.”" tags="" position="1775,350" size="100,100">Kitty: “It’s nice to feel understood for once. Anyways, let’s look for clues. Do you want to check upstairs first or downstairs?”
+
+[[Go Upstairs]]
+
+[[Go Downstairs]]</tw-passagedata><tw-passagedata pid="14" name="Go Upstairs" tags="" position="1712.5,475" size="100,100">Kitty: “Okay, up we go, do you want to check the bathroom, your bedroom, or your office first?
+
+[[Bathroom]]
+[[Bedroom]]
+[[Office]]</tw-passagedata><tw-passagedata pid="15" name="Go Downstairs" tags="" position="1837.5,475" size="100,100">Kitty: “Okay, do you want to go to the kitchen or living room first?”
+
+[[Kitchen]]
+[[Living Room]]
+</tw-passagedata><tw-passagedata pid="16" name="Bathroom" tags="" position="1587.5,600" size="100,100">“The bathroom stinks, I don’t think you’ve emptied my litterbox in a while… Maybe we should skip this room?”
+
+[[Go to a Different Room]]
+
+[[Inspect Litter Box]]</tw-passagedata><tw-passagedata pid="17" name="Bedroom" tags="" position="1700,600" size="100,100">Kitty: &quot;There&#39;s a lot to looka at in here. What do you want to check out first&quot;
+
+[[Your bed]]
+[[The Cat Bed]]
+[[Photo Collection]]
+
+</tw-passagedata><tw-passagedata pid="18" name="Office" tags="" position="1825,600" size="100,100"></tw-passagedata><tw-passagedata pid="19" name="Kitchen" tags="" position="2050,500" size="100,100"></tw-passagedata><tw-passagedata pid="20" name="Living Room" tags="" position="2050,400" size="100,100"></tw-passagedata><tw-passagedata pid="21" name="Go to a Different Room" tags="" position="1450,600" size="100,100">[[Bedroom]]
+[[Office]]
+[[Go Downstairs]]</tw-passagedata><tw-passagedata pid="22" name="Inspect Litter Box" tags="" position="1600,750" size="100,100">Kitty: “Oh, ew! It smells even worse up close.”
+
+[[MC: “Yeah, maybe we should’ve skipped that after all”]]</tw-passagedata><tw-passagedata pid="23" name="MC: “Yeah, maybe we should’ve skipped that after all”" tags="" position="1600,900" size="100,100">Kitty: “You think? Lets get out of here.”
+
+[[Bedroom]]
+[[Office]]
+[[Go Downstairs]] </tw-passagedata><tw-passagedata pid="24" name="Your bed" tags="" position="1762.5,725" size="100,100">You check your own bed. It’s a full queen size, currently for you and you alone.
+
+Kitty: “Probably would be lonely having the whole thing to yourself recently, right? Such a shame you two had to break up like that, all sudden and messy like that.”
+
+[[MC: “I’d rather not get into that now of all times, being dead and all. I can’t even apologize to her now.”]]
+</tw-passagedata><tw-passagedata pid="25" name="The Cat Bed" tags="" position="1775,850" size="100,100">You check the cat bed. You’ve had this bed for a few years now, receiving it as a gift after first purchasing Kitty’s bed. 
+
+[[inspect]]
+</tw-passagedata><tw-passagedata pid="26" name="Photo Collection" tags="" position="1775,975" size="100,100">You go over to your collection of family photos. Most contain your full family. Well, almost your full family, at least.
+
+[[continue on]]
+</tw-passagedata><tw-passagedata pid="27" name="MC: “I’d rather not get into that now of all times, being dead and all. I can’t even apologize to her now.”" tags="" position="1887.5,850" size="100,100">Kitty: “Fair enough (as if you ever would).”
+
+Look at [[The Cat Bed]] 
+Look at [[Photo Collection]] </tw-passagedata><tw-passagedata pid="28" name="inspect" tags="" position="1900,975" size="100,100">Kitty: “Well this is just my home. Not much to notice here.”
+
+You can’t help but recognize the tattered state the bed is in, along with the fact it’s only a fraction of his size.
+
+check [[Your bed]] 
+check [[Photo Collection]] 
+[[Go Downstairs]]
+</tw-passagedata><tw-passagedata pid="29" name="continue on" tags="" position="1775,1100" size="100,100">Kitty: “You and your cousin have been at each other’s throats for as long as I’ve been around, I’m sure it wouldn’t even surprise him that you’ve hid his face in all these photos.”
+
+[[MC: “Man, guess we didn&#39;t have a very good relationship. What a shame.”]]
+
+</tw-passagedata><tw-passagedata pid="30" name="MC: “He knows exactly what he has done to earn this treatment and I’m still glad I don’t have to see his face in here.”" tags="" position="2000,700" size="100,100">
+</tw-passagedata><tw-passagedata pid="31" name="MC: “Man, guess we didn&#39;t have a very good relationship. What a shame.”" tags="" position="1900,1225" size="100,100">Kitty: “I’m still surprised you actually invited him to your party last night, I would’ve thought it would be the fall of civilization before you invited him over.”
+
+MC: “And if it wasn’t for my mother that would’ve been true. Unfortunately, she used her lack of respect to invite him without my knowledge, forcing us both into a situation that shouldn’t have ever occurred.”
+
+check [[Your bed]] 
+check [[The Cat Bed]] 
+[[Go Downstairs]]</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
