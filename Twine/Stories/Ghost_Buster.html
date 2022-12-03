@@ -60,7 +60,7 @@ Kitty is a little stubborn, try calling one more time.
 [[Call Cat Again]] 
 </tw-passagedata><tw-passagedata pid="7" name="continue" tags="" position="925,425" size="100,100">Let’s get to busting this case. Where did your cat go again? Try calling for them
 
-[[Call cat]]</tw-passagedata><tw-passagedata pid="8" name="Check Voicemail" tags="" position="1200,300" size="100,100">“You have two voicemails:&quot;
+[[What&#39;s my cat&#39;s name again?]]</tw-passagedata><tw-passagedata pid="8" name="Check Voicemail" tags="" position="1200,300" size="100,100">“You have two voicemails:&quot;
 
 Click which one you would like to check first.
 
@@ -191,7 +191,9 @@ $Kitty: “Huh, wonder how I haven’t died of boredom.”
 [[Check the toy box]] 
 [[Something&#39;s missing...]] 
 [[Kitchen]] 
-[[Go Upstairs]] </tw-passagedata></tw-storydata>
+[[Go Upstairs]] </tw-passagedata><tw-passagedata pid="41" name="What&#39;s my cat&#39;s name again?" tags="" position="1000,575" size="100,100">(set: $Kitty to (prompt: &quot;Cat&#39;s name&quot;, &quot;Kitty&quot;) )
+
+[[Call cat]] </tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
