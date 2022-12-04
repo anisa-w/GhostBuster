@@ -9,7 +9,7 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Ghost_Buster.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Ghost_Buster" startnode="1" creator="Twine" creator-version="2.5.1" format="Harlowe" format-version="3.3.3" ifid="4C50A253-0371-448A-9A98-1FE96BCCACC2" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import 'https://fonts.googleapis.com/css?family=Meie+Script';
+<tw-storydata name="Ghost_Buster" startnode="43" creator="Twine" creator-version="2.5.1" format="Harlowe" format-version="3.3.3" ifid="4C50A253-0371-448A-9A98-1FE96BCCACC2" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import 'https://fonts.googleapis.com/css?family=Meie+Script';
 
 tw-passage {
   font-family: Courier New, monospace;
@@ -34,32 +34,37 @@ tw-icon {
 	padding-right: 20em;
 }
 
-</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="stairwell 1" tags="" position="625,300" size="100,100">..Meow..
+</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="stairwell 1" tags="" position="625,300" size="100,100">&lt;img src = &quot;images/CatOnStaircase.jpg&quot; width=&quot;860px&quot;&gt;
+..Meow..
 //You slowly wake up to see your cat perched at the top of the staircase, meowing down at you. You have a slight headache, did someone party a little too hard last night? //
 
 [[continue|next]]
 
 
 
- </tw-passagedata><tw-passagedata pid="2" name="next" tags="" position="775,300" size="100,100">//You look down and something’s not right: your hands are translucent; you feel light; and as your cat walks over, you find that it struts right through you. //
+ </tw-passagedata><tw-passagedata pid="2" name="next" tags="" position="775,300" size="100,100">&lt;img src = &quot;images/CatOnStaircaseWithGhostHands.jpg&quot; width=&quot;860px&quot;&gt;
+//You look down and something’s not right: your hands are translucent; you feel light; and as your cat walks over, you find that it struts right through you. //
 
 [[“Am I a ghost?”]]</tw-passagedata><tw-passagedata pid="3" name="“Am I a ghost?”" tags="" position="925,300" size="100,100">//You’ve just woken up to discover you’re a ghost, but what led to your untimely demise? Using the map, enter different areas of the house and find clues to refresh your memory about what happened last night. Your trusty cat will accompany you around the house as you try to bust the case of why you’re now a ghost. //
 
-[[continue]]</tw-passagedata><tw-passagedata pid="4" name="header" tags="header" position="425,300" size="100,100">(set: $map to &#39;&lt;img src = &quot;images/map.jpg&quot; width=&quot;1024px&quot;&gt;&#39;)
+[[continue]]</tw-passagedata><tw-passagedata pid="4" name="header" tags="header" position="425,300" size="100,100">(set: $map to &#39;&lt;img src = &quot;images/map.jpg&quot; width=&quot;640px&quot;&gt;&#39;)
 (append: ?SideBar)[
-(link-repeat: &quot;Open Map&quot;) [(alert:&quot;map\n&quot; + $map)]
+(link-repeat: &quot;Open Map&quot;) [(alert:$map)]
 [[Clues]]
 ]
-</tw-passagedata><tw-passagedata pid="5" name="Call Again" tags="" position="1075,300" size="100,100">“$Kitty, come here now!”
-//Your cat ignores you again and walks toward your cell phone,. You give up and walk towards $Kitty, stopping to pick up your phone. There were a couple of missed voicemails.//
+</tw-passagedata><tw-passagedata pid="5" name="Call Again" tags="" position="1075,300" size="100,100">&lt;img src = &quot;images/Voicemails.jpg&quot; width=&quot;860px&quot;&gt;
+“$Kitty, come here now!”
+//Your cat ignores you again and hops onto the table towards your house phone,. You give up and walk towards $Kitty, stopping to pick up your the device. There were a couple of missed voicemails.//
 
 [[Check Voicemail]] </tw-passagedata><tw-passagedata pid="6" name="Call cat" tags="" position="1075,425" size="100,100">“Come here, $Kitty..”
 //$Kitty is a little stubborn, try calling one more time.//
 
 [[Call Again]] 
-</tw-passagedata><tw-passagedata pid="7" name="continue" tags="" position="925,425" size="100,100">//Alright, you&#39;ve got the gist of things. Where did your cat go again? Try calling for them.//
+</tw-passagedata><tw-passagedata pid="7" name="continue" tags="" position="925,425" size="100,100">&lt;img src = &quot;images/WhereDidYourCatGo.jpg&quot; width=&quot;860px&quot;&gt;
+//Alright, you&#39;ve got the gist of things. Where did your cat go again? Try calling for them.//
 
-[[What&#39;s my cat&#39;s name again?]]</tw-passagedata><tw-passagedata pid="8" name="Check Voicemail" tags="" position="1200,300" size="100,100">“Huh, seems like some people were looking for me.&quot;
+[[What&#39;s my cat&#39;s name again?]]</tw-passagedata><tw-passagedata pid="8" name="Check Voicemail" tags="" position="1200,300" size="100,100">&lt;img src = &quot;images/Voicemails.jpg&quot; width=&quot;860px&quot;&gt;
+“Huh, seems like some people were looking for me.&quot;
 
 //Click on whichever one you would like to check first.//
 
@@ -74,9 +79,11 @@ tw-icon {
 
 [[Voicemail 1]] 
 
-[[Exit Voicemail]] </tw-passagedata><tw-passagedata pid="11" name="Exit Voicemail" tags="" position="1500,350" size="100,100">$Kitty: “You’re not very popular are you?”
+[[Exit Voicemail]] </tw-passagedata><tw-passagedata pid="11" name="Exit Voicemail" tags="" position="1500,350" size="100,100">&lt;img src = &quot;images/Voicemails.jpg&quot; width=&quot;860px&quot;&gt;
+$Kitty: “You’re not very popular are you?”
 
-[[&quot;You can talk?&quot;]]</tw-passagedata><tw-passagedata pid="12" name="&quot;You can talk?&quot;" tags="" position="1625,350" size="100,100">$Kitty: “Sure can, you just haven’t been able to understand me, but now that you’re finally dead you can!”
+[[&quot;You can talk?&quot;]]</tw-passagedata><tw-passagedata pid="12" name="&quot;You can talk?&quot;" tags="" position="1625,350" size="100,100">&lt;img src = &quot;images/Voicemails.jpg&quot; width=&quot;860px&quot;&gt;
+$Kitty: “Sure can, you just haven’t been able to understand me, but now that you’re finally dead you can!”
 
 [[MC: “You seem a bit too happy about this.”|sus cat]]</tw-passagedata><tw-passagedata pid="13" name="sus cat" tags="" position="1775,350" size="100,100">$Kitty: “It’s nice to feel understood for once. Anyways, let’s look for clues. Do you want to check upstairs first or downstairs?”
 
@@ -90,21 +97,25 @@ tw-icon {
 
 [[Kitchen]]
 [[Living Room]]
-</tw-passagedata><tw-passagedata pid="16" name="Bathroom" tags="" position="1587.5,600" size="100,100">$Kitty: “The bathroom stinks, I don’t think you’ve emptied my litterbox in a while… Maybe we should skip this room?”
+</tw-passagedata><tw-passagedata pid="16" name="Bathroom" tags="" position="1575,600" size="100,100">&lt;img src = &quot;images/Bathroom.jpg&quot; width=&quot;860px&quot;&gt;
+$Kitty: “The bathroom stinks, I don’t think you’ve emptied my litterbox in a while… Maybe we should skip this room?”
 
 [[Go to a Different Room]]
 
-[[Inspect Litter Box]]</tw-passagedata><tw-passagedata pid="17" name="Bedroom" tags="" position="1700,600" size="100,100">$Kitty: &quot;There&#39;s a lot to looka at in here. What do you want to check out first&quot;
+[[Inspect Litter Box]]</tw-passagedata><tw-passagedata pid="17" name="Bedroom" tags="" position="1700,600" size="100,100">&lt;img src = &quot;images/Bedroom.jpg&quot; width=&quot;860px&quot;&gt;
+$Kitty: &quot;There&#39;s a lot to looka at in here. What do you want to check out first&quot;
 
 [[Your bed]]
 [[The Cat Bed]]
 [[Photo Collection]]
 
-</tw-passagedata><tw-passagedata pid="18" name="Office" tags="" position="1875,600" size="100,100">Your office is a bit of a mess.
+</tw-passagedata><tw-passagedata pid="18" name="Office" tags="" position="1875,600" size="100,100">&lt;img src = &quot;images/Office.jpg&quot; width=&quot;860px&quot;&gt;
+//Your office is a bit of a mess.//
 
 [[Check the pile of books on the floor]]
 [[Check your diary]]
-[[Check your laptop]]</tw-passagedata><tw-passagedata pid="19" name="Kitchen" tags="" position="2125,400" size="100,100"></tw-passagedata><tw-passagedata pid="20" name="Living Room" tags="" position="2125,275" size="100,100">The living room looks different than you remember.
+[[Check your laptop]]</tw-passagedata><tw-passagedata pid="19" name="Kitchen" tags="" position="2125,400" size="100,100">&lt;img src = &quot;images/Kitchen.jpg&quot; width=&quot;860px&quot;&gt;</tw-passagedata><tw-passagedata pid="20" name="Living Room" tags="" position="2125,275" size="100,100">&lt;img src = &quot;images/LivingRoom.jpg&quot;&gt;
+The living room looks different than you remember.
 
 [[Check the broken pot]]
 [[Check the toy box]]
@@ -174,7 +185,8 @@ Antonio: “That’s what you said last time, you jerk.”
 
 [[Check the pile of books on the floor]] 
 [[Check your diary]] 
-[[Go to a Different Room]] </tw-passagedata><tw-passagedata pid="36" name="Check the broken pot" tags="" position="2150,50" size="100,100">You notice the pot, a gift for your first anniversary, is shattered in the corner of the room.
+[[Go to a Different Room]] </tw-passagedata><tw-passagedata pid="36" name="Check the broken pot" tags="" position="2150,50" size="100,100">&lt;img src = &quot;images/LivingRoom.jpg&quot; width=&quot;860px&quot;&gt;
+You notice the pot, a gift for your first anniversary, is shattered in the corner of the room.
 
 [[“I don’t remember this happening… was there a fight last night?”|fight]]
 
@@ -200,7 +212,9 @@ $Kitty: “Huh, wonder how I haven’t died of boredom.”
 (if:(history:)contains &quot;Photo Collection&quot;)[I didn&#39;t seem to have an amicable relationship with my cousin.. if the marked up photos were done by my hands.]
 
 (link: &#39;Back&#39;)[(goto: (history:)&#39;s last)]
-</tw-passagedata></tw-storydata>
+</tw-passagedata><tw-passagedata pid="43" name="start" tags="" position="675,475" size="100,100">&lt;img src = &quot;images/TitleScreen.jpg&quot; width=&quot;860px&quot;&gt;
+
+(align:&quot;&lt;==&gt;&quot;)+(box:&quot;X=&quot;)[[Start|stairwell 1]] </tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
