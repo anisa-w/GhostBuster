@@ -9,7 +9,7 @@
 </head>
 <body>
 <tw-story><noscript><tw-noscript>JavaScript needs to be enabled to play Ghost_Buster.</tw-noscript></noscript></tw-story>
-<tw-storydata name="Ghost_Buster" startnode="43" creator="Twine" creator-version="2.5.1" format="Harlowe" format-version="3.3.3" ifid="4C50A253-0371-448A-9A98-1FE96BCCACC2" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import 'https://fonts.googleapis.com/css?family=Meie+Script';
+<tw-storydata name="Ghost_Buster" startnode="96" creator="Twine" creator-version="2.5.1" format="Harlowe" format-version="3.3.3" ifid="4C50A253-0371-448A-9A98-1FE96BCCACC2" options="" tags="" zoom="1" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css">@import 'https://fonts.googleapis.com/css?family=Meie+Script';
 
 tw-passage {
   font-family: Courier New, monospace;
@@ -34,7 +34,178 @@ tw-icon {
 	padding-right: 20em;
 }
 
-</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="stairwell 1" tags="" position="625,300" size="100,100">&lt;img src = &quot;images/CatOnStaircase.jpg&quot; width=&quot;860px&quot;&gt;
+</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="stairwell 1" tags="" position="625,300" size="100,100">
+(set: $map to &#39;&lt;img src = &quot;images/map.jpg&quot; width=&quot;1024px&quot;&gt;&#39;)
+..Meow..
+You slowly wake up to see your cat perched at the top of the staircase, meowing down at you. You have a slight headache, did someone party a little too hard last night? 
+
+[[next]]
+
+
+
+ </tw-passagedata><tw-passagedata pid="2" name="next" tags="" position="775,300" size="100,100">You look down and something’s not right: your hands are translucent, you feel light, and as your cat walks over, you find that it struts right through you. 
+
+
+[[“Am I a ghost?”]]</tw-passagedata><tw-passagedata pid="3" name="“Am I a ghost?”" tags="" position="925,300" size="100,100"></tw-passagedata><tw-passagedata pid="4" name="header" tags="header" position="425,300" size="100,100">(append: ?SideBar)[
+(link-repeat: &quot;Open Map&quot;) [(alert:&quot;map\n&quot; + $map)]
+]</tw-passagedata><tw-passagedata pid="5" name="stairwell 1" tags="" position="625,300" size="100,100">
+(set: $map to &#39;&lt;img src = &quot;images/map.jpg&quot; width=&quot;1024px&quot;&gt;&#39;)
+..Meow..
+You slowly wake up to see your cat perched at the top of the staircase, meowing down at you. You have a slight headache, did someone party a little too hard last night? 
+
+[[next]]
+
+
+
+ </tw-passagedata><tw-passagedata pid="6" name="next" tags="" position="775,300" size="100,100">You look down and something’s not right: your hands are translucent, you feel light, and as your cat walks over, you find that it struts right through you. 
+
+
+[[“Am I a ghost?”]]</tw-passagedata><tw-passagedata pid="7" name="“Am I a ghost?”" tags="" position="925,300" size="100,100">
+You’ve just woken up to discover you’re a ghost, but what led to your untimely demise? Using the map, enter different areas of the house and find clues to refresh your memory about what happened last night. Your trusty cat will accompany you around the house as you try to bust the case of why you’re now a ghost. 
+
+[[continue]]</tw-passagedata><tw-passagedata pid="8" name="header" tags="header" position="425,300" size="100,100">(append: ?SideBar)[
+(link-repeat: &quot;Open Map&quot;) [(alert:&quot;map\n&quot; + $map)]
+]</tw-passagedata><tw-passagedata pid="9" name="Call Cat Again" tags="" position="1075,300" size="100,100">“Come here, Kitty, now!”
+Your cat ignores you again and walks toward the phone and sits on a button starting the voicemail.
+
+[[Check Voicemail]] </tw-passagedata><tw-passagedata pid="10" name="Call cat" tags="" position="1075,425" size="100,100">“Come here, Kitty”
+Kitty is a little stubborn, try calling one more time.
+
+[[Call Cat Again]] 
+</tw-passagedata><tw-passagedata pid="11" name="continue" tags="" position="925,425" size="100,100">Let’s get to busting this case. Where did your cat go again? Try calling for them
+
+[[Call cat]]</tw-passagedata><tw-passagedata pid="12" name="Check Voicemail" tags="" position="1200,300" size="100,100">“You have two voicemails:&quot;
+
+Click which one you would like to check first.
+
+[[Voicemail 1]] 
+[[Voicemail 2]] </tw-passagedata><tw-passagedata pid="13" name="Voicemail 1" tags="" position="1350,300" size="100,100">Voicemail 1: Hi Sweetums, you know I didn’t mean a word of what I said at the party right? I know we had a rough break up but I would never hurt you over it, that would be wayyyy too dramatic of me. I mean sure you’re an absolute jerk and I don’t know why I bother trying to stay friends with your no good- *Deep breath* God I’m getting all worked up again and you’re not even here. I’ll talk to you later. Bye.
+
+[[Voicemail 2]] 
+
+[[Exit Voicemail]] </tw-passagedata><tw-passagedata pid="14" name="Voicemail 2" tags="" position="1350,425" size="100,100">Voicemail 2: Hey Cuz, I didn’t say anything last night ‘cause it was your birthday party, but  this is like the 100th time I’ve called you. You know that you owe me big time, pick up before I do something we’re both gonna regret. I need my money now.
+
+[[Voicemail 1]] 
+
+[[Exit Voicemail]] </tw-passagedata><tw-passagedata pid="15" name="Exit Voicemail" tags="" position="1500,350" size="100,100">Kitty: “You’re not very popular are you?”
+
+[[&quot;You can talk?&quot;]]</tw-passagedata><tw-passagedata pid="16" name="&quot;You can talk?&quot;" tags="" position="1625,350" size="100,100">Kitty: “Sure can, you just haven’t been able to understand me, but now that you’re finally dead you can!”
+
+[[MC: “You seem a bit too happy about this.”]]</tw-passagedata><tw-passagedata pid="17" name="MC: “You seem a bit too happy about this.”" tags="" position="1775,350" size="100,100">Kitty: “It’s nice to feel understood for once. Anyways, let’s look for clues. Do you want to check upstairs first or downstairs?”
+
+[[Go Upstairs]]
+
+[[Go Downstairs]]</tw-passagedata><tw-passagedata pid="18" name="Go Upstairs" tags="" position="1712.5,475" size="100,100">Kitty: &quot;Okay, up we go, do you want to check the bathroom, your bedroom, or your office first?&quot;
+
+[[Bathroom]]
+[[Bedroom]]
+[[Office]]</tw-passagedata><tw-passagedata pid="19" name="Go Downstairs" tags="" position="1950,350" size="100,100">Kitty: “Okay, do you want to go to the kitchen or living room first?”
+
+[[Kitchen]]
+[[Living Room]]
+</tw-passagedata><tw-passagedata pid="20" name="Bathroom" tags="" position="1600,625" size="100,100">Kitty: “The bathroom stinks, I don’t think you’ve emptied my litterbox in a while… Maybe we should skip this room?”
+
+[[Go to a Different Room]]
+
+[[Inspect Litter Box]]</tw-passagedata><tw-passagedata pid="21" name="Bedroom" tags="" position="1700,600" size="100,100">Kitty: &quot;There&#39;s a lot to looka at in here. What do you want to check out first&quot;
+
+[[Your bed]]
+[[The Cat Bed]]
+[[Photo Collection]]
+
+</tw-passagedata><tw-passagedata pid="22" name="Office" tags="" position="1875,600" size="100,100">Your office is a bit of a mess.
+
+[[Check the pile of books on the floor]]
+[[Check your diary]]
+[[Check your laptop]]</tw-passagedata><tw-passagedata pid="23" name="Kitchen" tags="" position="2675,50" size="100,100"></tw-passagedata><tw-passagedata pid="24" name="Living Room" tags="" position="2125,275" size="100,100">The living room looks different than you remember.
+
+[[Check the broken pot]]
+[[Check the toy box]]
+[[Something&#39;s missing...]]</tw-passagedata><tw-passagedata pid="25" name="Go to a Different Room" tags="" position="1450,600" size="100,100">[[Bathroom]]
+[[Bedroom]]
+[[Office]]
+[[Go Downstairs]]</tw-passagedata><tw-passagedata pid="26" name="Inspect Litter Box" tags="" position="1600,750" size="100,100">Kitty: “Oh, ew! It smells even worse up close.”
+
+[[“Yeah, maybe we should’ve skipped that after all.”]]</tw-passagedata><tw-passagedata pid="27" name="“Yeah, maybe we should’ve skipped that after all.”" tags="" position="1600,900" size="100,100">Kitty: “You think? Lets get out of here.”
+
+[[Bedroom]]
+[[Office]]
+[[Go Downstairs]] </tw-passagedata><tw-passagedata pid="28" name="Your bed" tags="" position="1762.5,725" size="100,100">You check your own bed. It’s a full queen size, currently for you and you alone.
+
+Kitty: “Probably would be lonely having the whole thing to yourself recently, right? Such a shame you two had to break up like that, all sudden and messy like that.”
+
+[[“I’d rather not get into that now of all times, being dead and all. I can’t even apologize to her now.”]]
+</tw-passagedata><tw-passagedata pid="29" name="The Cat Bed" tags="" position="1775,850" size="100,100">You check the cat bed. You’ve had this bed for a few years now, receiving it as a gift after first purchasing Kitty’s bed. 
+
+[[inspect]]
+</tw-passagedata><tw-passagedata pid="30" name="Photo Collection" tags="" position="1775,975" size="100,100">You go over to your collection of family photos. Most contain your full family. Well, almost your full family, at least.
+
+[[continue on]]
+</tw-passagedata><tw-passagedata pid="31" name="“I’d rather not get into that now of all times, being dead and all. I can’t even apologize to her now.”" tags="" position="1887.5,850" size="100,100">Kitty: “Fair enough (as if you ever would).”
+
+Look at [[The Cat Bed]] 
+Look at [[Photo Collection]] 
+[[Go to a Different Room]] </tw-passagedata><tw-passagedata pid="32" name="inspect" tags="" position="1900,975" size="100,100">Kitty: “Well this is just my home. Not much to notice here.”
+
+You can’t help but recognize the tattered state the bed is in, along with the fact it’s only a fraction of his size.
+
+check [[Your bed]] 
+check [[Photo Collection]] 
+[[Go to a Different Room]]
+</tw-passagedata><tw-passagedata pid="33" name="continue on" tags="" position="1775,1100" size="100,100">Kitty: “You and your cousin have been at each other’s throats for as long as I’ve been around, I’m sure it wouldn’t even surprise him that you’ve hid his face in all these photos.”
+
+[[“Man, guess we didn&#39;t have a very good relationship. What a shame.”]]
+
+</tw-passagedata><tw-passagedata pid="34" name="“Man, guess we didn&#39;t have a very good relationship. What a shame.”" tags="" position="1900,1225" size="100,100">Kitty: “I’m still surprised you actually invited him to your party last night, I would’ve thought it would be the fall of civilization before you invited him over.”
+
+check [[Your bed]] 
+check [[The Cat Bed]] 
+[[Go to a Different Room]]</tw-passagedata><tw-passagedata pid="35" name="Check the pile of books on the floor" tags="" position="2050,775" size="100,100">Some of the books are all ripped up.
+One of them was an anniversary gift.
+One of them is called &quot;How to Take Care of Your Cat.&quot;
+
+[[Check your diary]] 
+[[Check your laptop]] 
+[[Go to a Different Room]] </tw-passagedata><tw-passagedata pid="36" name="Check your diary" tags="" position="2175,550" size="100,100">The most recent entry in your diary reads: “I should break up with my girlfriend. She honestly sucks and keeps wanting to go out, but I just don’t have the money for that. Plus she’s been acting really strange lately. I can’t tell what’s up but I just have a feeling she’s up to something”
+Kitty: “Hmm… sus.”
+
+[[Check the pile of books on the floor]] 
+[[Check your laptop]] 
+[[Go to a Different Room]] 
+</tw-passagedata><tw-passagedata pid="37" name="Check your laptop" tags="" position="2075,650" size="100,100">On your laptop screen, you see your bank account, with a balance of -$5000. All the recent transactions have been from online gambling sites. You also see a request for money from your cousin, Antonio.
+
+Kitty: “Wow, all this money spent at a casino and yet you still haven’t bought me a new toy.”
+
+[[Memory: your cousin]]</tw-passagedata><tw-passagedata pid="38" name="Memory: your cousin" tags="" position="2200,775" size="100,100">You called your cousin one night. “Hey cuz, I know I said I’d pay you back, but I just need a little more.&quot;
+Antonio: &quot;More money? Didn&#39;t I give you some yesterday?&quot;
+You: &quot;I know, I know. I can win it all back, I promise”
+Antonio: “That’s what you said last time, you jerk.”
+
+[[“Forget about your new toy, I obviously messed up.”]]
+
+</tw-passagedata><tw-passagedata pid="39" name="“Forget about your new toy, I obviously messed up.”" tags="" position="2200,900" size="100,100">Kitty: &quot;Well, that&#39;s not my fault.&quot;
+
+[[Check the pile of books on the floor]] 
+[[Check your diary]] 
+[[Go to a Different Room]] </tw-passagedata><tw-passagedata pid="40" name="Check the broken pot" tags="" position="2150,50" size="100,100">You notice the pot, a gift for your first anniversary, is shattered in the corner of the room.
+
+[[“I don’t remember this happening… was there a fight last night?”]]
+
+</tw-passagedata><tw-passagedata pid="41" name="Check the toy box" tags="" position="2300,200" size="100,100">It&#39;s empty. You haven&#39;t gotten any toys in a while.
+
+$Kitty: “Huh, wonder how I haven’t died of boredom.”
+
+[[Check the broken pot]] 
+[[Something&#39;s missing...]] 
+[[Kitchen]] 
+[[Go Upstairs]] </tw-passagedata><tw-passagedata pid="42" name="Something&#39;s missing..." tags="" position="2525,25" size="100,100"></tw-passagedata><tw-passagedata pid="43" name="“I don’t remember this happening… was there a fight last night?”" tags="" position="1800,0" size="100,100">Kitty: “Who knows, once you started to have your blow up with your woman, everyone seemed to find the best way out. The tension was so strong you could almost see it spread across the house.”
+
+[[“Was it really that bad?”]]</tw-passagedata><tw-passagedata pid="44" name="“Was it really that bad?”" tags="" position="1825,150" size="100,100">Your cat stares at you; you can almost feel his judgment.
+
+[[Check the toy box]] 
+[[Something&#39;s missing...]] 
+[[Kitchen]] 
+[[Go Upstairs]] </tw-passagedata><tw-passagedata pid="45" name="stairwell 1" tags="" position="625,300" size="100,100">&lt;img src = &quot;images/CatOnStaircase.jpg&quot; width=&quot;860px&quot;&gt;
 ..Meow..
 //You slowly wake up to see your cat perched at the top of the staircase, meowing down at you. You have a slight headache, did someone party a little too hard last night? //
 
@@ -42,12 +213,235 @@ tw-icon {
 
 
 
- </tw-passagedata><tw-passagedata pid="2" name="next" tags="" position="775,300" size="100,100">&lt;img src = &quot;images/CatOnStaircaseWithGhostHands.jpg&quot; width=&quot;860px&quot;&gt;
+ </tw-passagedata><tw-passagedata pid="46" name="next" tags="" position="775,300" size="100,100">&lt;img src = &quot;images/CatOnStaircaseWithGhostHands.jpg&quot; width=&quot;860px&quot;&gt;
 //You look down and something’s not right: your hands are translucent; you feel light; and as your cat walks over, you find that it struts right through you. //
 
-[[“Am I a ghost?”]]</tw-passagedata><tw-passagedata pid="3" name="“Am I a ghost?”" tags="" position="925,300" size="100,100">//You’ve just woken up to discover you’re a ghost, but what led to your untimely demise? Using the map, enter different areas of the house and find clues to refresh your memory about what happened last night. Your trusty cat will accompany you around the house as you try to bust the case of why you’re now a ghost. //
+[[“Am I a ghost?”]]</tw-passagedata><tw-passagedata pid="47" name="“Am I a ghost?”" tags="" position="925,300" size="100,100">//You’ve just woken up to discover you’re a ghost, but what led to your untimely demise? Using the map, enter different areas of the house and find clues to refresh your memory about what happened last night. Your trusty cat will accompany you around the house as you try to bust the case of why you’re now a ghost. //
 
-[[continue]]</tw-passagedata><tw-passagedata pid="4" name="header" tags="header" position="425,300" size="100,100">(set: $map to &#39;&lt;img src = &quot;images/map.jpg&quot; width=&quot;640px&quot;&gt;&#39;)
+[[continue]]</tw-passagedata><tw-passagedata pid="48" name="header" tags="header" position="425,300" size="100,100">(set: $map to &#39;&lt;img src = &quot;images/map.jpg&quot; width=&quot;640px&quot;&gt;&#39;)
+(append: ?SideBar)[
+(link-repeat: &quot;Open Map&quot;) [(alert:$map)]
+[[Clues]]
+]
+</tw-passagedata><tw-passagedata pid="49" name="Call Again" tags="" position="1075,300" size="100,100">&lt;img src = &quot;images/Voicemails.jpg&quot; width=&quot;860px&quot;&gt;
+“$Kitty, come here now!”
+//Your cat ignores you again and hops onto the table towards your house phone,. You give up and walk towards $Kitty, stopping to pick up your the device. There were a couple of missed voicemails.//
+
+[[Check Voicemail]] </tw-passagedata><tw-passagedata pid="50" name="Call cat" tags="" position="1075,425" size="100,100">“Come here, $Kitty..”
+//$Kitty is a little stubborn, try calling one more time.//
+
+[[Call Again]] 
+</tw-passagedata><tw-passagedata pid="51" name="continue" tags="" position="925,425" size="100,100">&lt;img src = &quot;images/WhereDidYourCatGo.jpg&quot; width=&quot;860px&quot;&gt;
+//Alright, you&#39;ve got the gist of things. Where did your cat go again? Try calling for them.//
+
+[[What&#39;s my cat&#39;s name again?]]</tw-passagedata><tw-passagedata pid="52" name="Check Voicemail" tags="" position="1200,300" size="100,100">&lt;img src = &quot;images/Voicemails.jpg&quot; width=&quot;860px&quot;&gt;
+“Huh, seems like some people were looking for me.&quot;
+
+//Click on whichever one you would like to check first.//
+
+[[Voicemail 1]] 
+[[Voicemail 2]] </tw-passagedata><tw-passagedata pid="53" name="Voicemail 1" tags="" position="1350,300" size="100,100">Voicemail 1: Hi Sweetums~ you know I didn’t mean a word of what I said at the party right? I know we had a rough break up but I could never bring myself to hate you, that would be wayyyy too dramatic of me. I mean- sure you’re an absolute jerk and I don’t know why I bother &#39;&#39;trying&#39;&#39; to stay friends with your no good- *Deep breath* God I’m getting all worked up again and you’re not even here. I’ll talk to you later. Bye. 
+
+*Beeep*
+
+[[Voicemail 2]] 
+
+[[Exit Voicemail]] </tw-passagedata><tw-passagedata pid="54" name="Voicemail 2" tags="" position="1325,525" size="100,100">Voicemail 2: Hey Cuz, I didn’t say anything last night ‘cause it was your birthday party, but  this is like the 100th time I’ve called you. You know you still owe me mad cash yeah? Call me back before I do something we’re both gonna regret. I need my money now.
+
+[[Voicemail 1]] 
+
+[[Exit Voicemail]] </tw-passagedata><tw-passagedata pid="55" name="Exit Voicemail" tags="" position="1500,350" size="100,100">&lt;img src = &quot;images/Voicemails.jpg&quot; width=&quot;860px&quot;&gt;
+$Kitty: “You’re not very popular are you?”
+
+[[&quot;You can talk?&quot;]]</tw-passagedata><tw-passagedata pid="56" name="&quot;You can talk?&quot;" tags="" position="1625,350" size="100,100">&lt;img src = &quot;images/Voicemails.jpg&quot; width=&quot;860px&quot;&gt;
+$Kitty: “Sure can, you just haven’t been able to understand me, but now that you’re finally dead you can!”
+
+[[MC: “You seem a bit too happy about this.”|sus cat]]</tw-passagedata><tw-passagedata pid="57" name="sus cat" tags="" position="1775,350" size="100,100">$Kitty: “It’s nice to feel understood for once. Anyways, let’s look for clues. Do you want to check upstairs first or downstairs?”
+
+[[Go Upstairs]]
+
+[[Go Downstairs]]</tw-passagedata><tw-passagedata pid="58" name="Go Upstairs" tags="" position="1950,500" size="100,100">$Kitty: &quot;Okay, up we go, do you want to check the bathroom, your bedroom, or your office first?&quot;
+
+[[Bathroom]]
+[[Bedroom]]
+[[Office]]</tw-passagedata><tw-passagedata pid="59" name="Go Downstairs" tags="" position="1950,350" size="100,100">Kitty: “Okay, do you want to go to the kitchen or living room first?”
+
+[[Kitchen]]
+[[Living Room]]
+</tw-passagedata><tw-passagedata pid="60" name="Bathroom" tags="" position="1575,600" size="100,100">&lt;img src = &quot;images/Bathroom.jpg&quot; width=&quot;860px&quot;&gt;
+$Kitty: “The bathroom stinks, I don’t think you’ve emptied my litterbox in a while… Maybe we should skip this room?”
+
+[[Go to a Different Room]]
+
+[[Inspect Litter Box]]</tw-passagedata><tw-passagedata pid="61" name="Bedroom" tags="" position="1700,600" size="100,100">&lt;img src = &quot;images/Bedroom.jpg&quot; width=&quot;860px&quot;&gt;
+$Kitty: &quot;There&#39;s a lot to looka at in here. What do you want to check out first&quot;
+
+[[Your bed]]
+[[The Cat Bed]]
+[[Photo Collection]]
+
+</tw-passagedata><tw-passagedata pid="62" name="Office" tags="" position="1875,600" size="100,100">&lt;img src = &quot;images/Office.jpg&quot; width=&quot;860px&quot;&gt;
+//Your office is a bit of a mess.//
+
+[[Check the pile of books on the floor]]
+[[Check your diary]]
+[[Check your laptop]]</tw-passagedata><tw-passagedata pid="63" name="Kitchen" tags="" position="2400,300" size="100,100">&lt;img src = &quot;images/Kitchen.jpg&quot; width=&quot;860px&quot;&gt;
+
+
+[[Check fridge]]
+[[Inspect solo cup]]
+[[Go to a different room]]
+</tw-passagedata><tw-passagedata pid="64" name="Living Room" tags="" position="2100,325" size="100,100">&lt;img src = &quot;images/LivingRoom.jpg&quot;&gt;
+The living room looks different than you remember.
+
+[[Check the broken pot]]
+[[Check the toy box]]
+[[Something&#39;s missing...]]
+[[Go to a different room]] </tw-passagedata><tw-passagedata pid="65" name="Go to a Different Room" tags="" position="1500,475" size="100,100">[[Bathroom]]
+[[Bedroom]]
+[[Office]]
+[[Go Downstairs]]</tw-passagedata><tw-passagedata pid="66" name="Inspect Litter Box" tags="" position="1600,750" size="100,100">$Kitty: “Oh, ew! It smells even worse up close.”
+
+[[“Yeah, maybe we should’ve skipped that after all.”|skip]]</tw-passagedata><tw-passagedata pid="67" name="skip" tags="" position="1600,900" size="100,100">$Kitty: “You think? Lets get out of here.”
+
+[[Bedroom]]
+[[Office]]
+[[Go Downstairs]] </tw-passagedata><tw-passagedata pid="68" name="Your bed" tags="" position="1762.5,725" size="100,100">You check your own bed. It’s a full queen size, currently for you and you alone.
+
+$Kitty: “Probably would be lonely having the whole thing to yourself recently, right? Such a shame you two had to break up like that, all sudden and messy like that.”
+
+[[“I’d rather not get into that now of all times, being dead and all. I can’t even apologize to her now.”|apologize]]
+</tw-passagedata><tw-passagedata pid="69" name="The Cat Bed" tags="" position="1775,850" size="100,100">You check the cat bed. You’ve had this bed for a few years now, receiving it as a gift after first purchasing $Kitty’s bed. 
+
+[[inspect]]
+</tw-passagedata><tw-passagedata pid="70" name="Photo Collection" tags="" position="1775,975" size="100,100">You go over to your collection of family photos. Most contain your full family. Well, almost your full family, at least.
+
+[[continue on]]
+</tw-passagedata><tw-passagedata pid="71" name="apologize" tags="" position="1900,850" size="100,100">$Kitty: “Fair enough (as if you ever would).”
+
+Look at [[The Cat Bed]] 
+Look at [[Photo Collection]] 
+[[Go to a Different Room]] </tw-passagedata><tw-passagedata pid="72" name="inspect" tags="" position="1900,975" size="100,100">$Kitty: “Well this is just my home. Not much to notice here.”
+
+You can’t help but recognize the tattered state the bed is in, along with the fact it’s only a fraction of his size.
+
+check [[Your bed]] 
+check [[Photo Collection]] 
+[[Go to a Different Room]]
+</tw-passagedata><tw-passagedata pid="73" name="continue on" tags="" position="1775,1100" size="100,100">$Kitty: “You and your cousin have been at each other’s throats for as long as I’ve been around, I’m sure it wouldn’t even surprise him that you’ve hid his face in all these photos.”
+
+[[“Man, guess we didn&#39;t have a very good relationship. What a shame.”|shame]]
+
+</tw-passagedata><tw-passagedata pid="74" name="shame" tags="" position="1900,1225" size="100,100">$Kitty: “I’m still surprised you actually invited him to your party last night, I would’ve thought it would be the fall of civilization before you invited him over.”
+
+check [[Your bed]] 
+check [[The Cat Bed]] 
+[[Go to a Different Room]]</tw-passagedata><tw-passagedata pid="75" name="Check the pile of books on the floor" tags="" position="2025,925" size="100,100">Some of the books are all ripped up.
+One of them was an anniversary gift.
+One of them is called &quot;How to Take Care of Your Cat.&quot;
+
+[[Check your diary]] 
+[[Check your laptop]] 
+[[Go to a Different Room]] </tw-passagedata><tw-passagedata pid="76" name="Check your diary" tags="" position="2175,550" size="100,100">The most recent entry in your diary reads: “I should break up with my girlfriend. She honestly sucks and keeps wanting to go out, but I just don’t have the money for that. Plus she’s been acting really strange lately. I can’t tell what’s up but I just have a feeling she’s up to something”
+$Kitty: “Hmm… sus.”
+
+[[Check the pile of books on the floor]] 
+[[Check your laptop]] 
+[[Go to a Different Room]] 
+</tw-passagedata><tw-passagedata pid="77" name="Check your laptop" tags="" position="2075,675" size="100,100">On your laptop screen, you see your bank account, with a balance of -$5000. All the recent transactions have been from online gambling sites. You also see a request for money from your cousin, Antonio.
+
+$Kitty: “Wow, all this money spent gambling and yet you still haven’t bought me a new toy.”
+
+[[Memory: your cousin]]</tw-passagedata><tw-passagedata pid="78" name="Memory: your cousin" tags="" position="2200,775" size="100,100">You called your cousin one night. “Hey cuz, I know I said I’d pay you back, but I just need a little more.&quot;
+Antonio: &quot;More money? Didn&#39;t I give you some yesterday?&quot;
+You: &quot;I know, I know. I can win it all back, I promise”
+Antonio: “That’s what you said last time, you jerk.”
+
+[[“Forget about your new toy, I obviously messed up.”]]
+
+</tw-passagedata><tw-passagedata pid="79" name="“Forget about your new toy, I obviously messed up.”" tags="" position="2200,900" size="100,100">$Kitty: &quot;Well, that&#39;s not my fault.&quot;
+
+[[Check the pile of books on the floor]] 
+[[Check your diary]] 
+[[Go to a Different Room]] </tw-passagedata><tw-passagedata pid="80" name="Check the broken pot" tags="" position="2150,50" size="100,100">&lt;img src = &quot;images/LivingRoom.jpg&quot; width=&quot;860px&quot;&gt;
+You notice the pot, a gift for your first anniversary, is shattered in the corner of the room.
+
+[[“I don’t remember this happening… was there a fight last night?”|fight]]
+
+</tw-passagedata><tw-passagedata pid="81" name="Check the toy box" tags="" position="2300,200" size="100,100">It&#39;s empty. You haven&#39;t gotten any toys in a while.
+
+$Kitty: “Huh, wonder how I haven’t died of boredom.”
+
+[[Check the broken pot]] 
+[[Something&#39;s missing...]] 
+[[Kitchen]] 
+[[Go Upstairs]] </tw-passagedata><tw-passagedata pid="82" name="Something&#39;s missing..." tags="" position="2300,50" size="100,100">MC: “I could’ve sworn I had an armchair here, did something happen to it last night?”
+
+$Kitty: “Oh yeah… That was Antonio. He took a moment when no one was around and took it out to his car, mumbling something about taking what he’s owed. Of course, I tried my absolute hardest to stop him, but I was unsuccessful, being a cat and all.”
+
+[[“Wow, I’m honestly surprised. Didn’t think he’d have it in him to actually do something like that. And now there’s just another reason he will forever lack my forgiveness.”]]
+
+</tw-passagedata><tw-passagedata pid="83" name="fight" tags="" position="2000,50" size="100,100">Kitty: “Who knows, once you started to have your blow up with your woman, everyone seemed to find the best way out. The tension was so strong you could almost see it spread across the house.”
+
+[[“Was it really that bad?”]]</tw-passagedata><tw-passagedata pid="84" name="“Was it really that bad?”" tags="" position="2000,175" size="100,100">Your cat stares at you; you can almost feel his judgment.
+
+[[Check the toy box]] 
+[[Something&#39;s missing...]] 
+[[Kitchen]] 
+[[Go Upstairs]] </tw-passagedata><tw-passagedata pid="85" name="What&#39;s my cat&#39;s name again?" tags="" position="1000,575" size="100,100">(set: $Kitty to (prompt: &quot;Cat&#39;s name&quot;, &quot;&quot;) )
+
+[[Call cat]] </tw-passagedata><tw-passagedata pid="86" name="Clues" tags="" position="425,425" size="100,100">(if:(history:)contains &quot;Voicemail 1&quot;)[Girlfriend-er,, ex-girlfriend seems to still hold grudges against me from our last argument..]
+(else:)[No evidence has been collected. ]
+(if:(history:)contains &quot;Voicemail 2&quot;)[My cousin seems desperate to get his money back.. perhaps he had already made his move..]
+(if:(history:)contains &quot;Photo Collection&quot;)[I didn&#39;t seem to have an amicable relationship with my cousin.. if the marked up photos were done by my hands.]
+
+(link: &#39;Back&#39;)[(goto: (history:)&#39;s last)]
+</tw-passagedata><tw-passagedata pid="87" name="start" tags="" position="675,475" size="100,100">&lt;img src = &quot;images/TitleScreen.jpg&quot; width=&quot;860px&quot;&gt;
+
+(align:&quot;&lt;==&gt;&quot;)+(box:&quot;X=&quot;)[[Start|stairwell 1]] </tw-passagedata><tw-passagedata pid="88" name="Check fridge" tags="" position="2325,450" size="100,100">On the fridge sits a note with a list of your allergens.
+
+[[Memory: Groceries]]</tw-passagedata><tw-passagedata pid="89" name="Inspect solo cup" tags="" position="2325,600" size="100,100">The solo cup has left a sticky mess on the ground next to the bag of basic cat food.
+
+[[Memory: Try this drink]]
+</tw-passagedata><tw-passagedata pid="90" name="Memory: Groceries" tags="" position="2450,575" size="100,100">Your aunt called again. 
+
+Aunt: “Hi Honey, I’m telling Antonio to bring you more groceries again, I don’t think you’ve been eating enough lately. I know you’re always busy with work but that’s no excuse.”
+You: “Thanks Auntie you&#39;re the best ”
+
+[[God I wish she would stop making him send me stuff I hate seeing his stupid face. And I can’t even eat any of this, basically everything on this list is something I can’t eat and that’s all he bought, why would he do this?]]
+</tw-passagedata><tw-passagedata pid="91" name="God I wish she would stop making him send me stuff I hate seeing his stupid face. And I can’t even eat any of this, basically everything on this list is something I can’t eat and that’s all he bought, why would he do this?" tags="" position="2450,700" size="100,100">$Kitty: &quot;Well hey, at least you can eat all of thes now without having to worry&quot;
+You: &quot;I think it&#39;d pass right through me&quot;
+
+[[Kitchen]] </tw-passagedata><tw-passagedata pid="92" name="Memory: Try this drink" tags="" position="2325,725" size="100,100">Ex-Girlfriend: &quot;You should really drink this I promise it’s to die for&quot;
+
+[[&quot;She wouldn&#39;t poison me, right?&quot;]]
+
+
+</tw-passagedata><tw-passagedata pid="93" name="&quot;She wouldn&#39;t poison me, right?&quot;" tags="" position="2325,850" size="100,100">$Kitty: “I sure would… if I were her of course”
+
+[[Kitchen]]
+</tw-passagedata><tw-passagedata pid="94" name="Go to a different room" tags="" position="2100,1100" size="100,100">[[Living Room]] 
+[[Kitchen]] 
+[[Go Upstairs]] </tw-passagedata><tw-passagedata pid="95" name="“Wow, I’m honestly surprised. Didn’t think he’d have it in him to actually do something like that. And now there’s just another reason he will forever lack my forgiveness.”" tags="" position="2425,175" size="100,100">$Kitty: &quot;I feel like if anything this just shows how much of his forgiveness you don&#39;t have after what you did&quot;
+
+You: &quot;...&quot;
+
+[[Check the toy box]] 
+[[Check the broken pot]] 
+[[Go to a different room]] </tw-passagedata><tw-passagedata pid="96" name="stairwell 1" tags="" position="625,300" size="100,100">&lt;img src = &quot;images/CatOnStaircase.jpg&quot; width=&quot;860px&quot;&gt;
+..Meow..
+//You slowly wake up to see your cat perched at the top of the staircase, meowing down at you. You have a slight headache, did someone party a little too hard last night? //
+
+[[continue|next]]
+
+
+
+ </tw-passagedata><tw-passagedata pid="97" name="next" tags="" position="775,300" size="100,100">&lt;img src = &quot;images/CatOnStaircaseWithGhostHands.jpg&quot; width=&quot;860px&quot;&gt;
+//You look down and something’s not right: your hands are translucent; you feel light; and as your cat walks over, you find that it struts right through you. //
+
+[[“Am I a ghost?”]]</tw-passagedata><tw-passagedata pid="98" name="“Am I a ghost?”" tags="" position="925,300" size="100,100">//You’ve just woken up to discover you’re a ghost, but what led to your untimely demise? Using the map, enter different areas of the house and find clues to refresh your memory about what happened last night. Your trusty cat will accompany you around the house as you try to bust the case of why you’re now a ghost. //
+
+[[continue]]</tw-passagedata><tw-passagedata pid="99" name="header" tags="header" position="425,300" size="100,100">(set: $map to &#39;&lt;img src = &quot;images/map.jpg&quot; width=&quot;640px&quot;&gt;&#39;)
 (append: ?SideBar)[
 (link-repeat: &quot;Open Map&quot;) [(alert:$map)]
 [[Clues]]
@@ -55,24 +449,24 @@ tw-icon {
 
 
 
-</tw-passagedata><tw-passagedata pid="5" name="Call Again" tags="" position="1075,300" size="100,100">&lt;img src = &quot;images/Voicemails.jpg&quot; width=&quot;860px&quot;&gt;
+</tw-passagedata><tw-passagedata pid="100" name="Call Again" tags="" position="1075,300" size="100,100">&lt;img src = &quot;images/Voicemails.jpg&quot; width=&quot;860px&quot;&gt;
 “$Kitty, come here now!”
 //Your cat ignores you again and hops onto the table towards your house phone,. You give up and walk towards $Kitty, stopping to pick up your the device. There were a couple of missed voicemails.//
 
-[[Check Voicemail]] </tw-passagedata><tw-passagedata pid="6" name="Call cat" tags="" position="1075,425" size="100,100">“Come here, $Kitty..”
+[[Check Voicemail]] </tw-passagedata><tw-passagedata pid="101" name="Call cat" tags="" position="1075,425" size="100,100">“Come here, $Kitty..”
 //$Kitty is a little stubborn, try calling one more time.//
 
 [[Call Again]] 
-</tw-passagedata><tw-passagedata pid="7" name="continue" tags="" position="925,425" size="100,100">&lt;img src = &quot;images/WhereDidYourCatGo.jpg&quot; width=&quot;860px&quot;&gt;
+</tw-passagedata><tw-passagedata pid="102" name="continue" tags="" position="925,425" size="100,100">&lt;img src = &quot;images/WhereDidYourCatGo.jpg&quot; width=&quot;860px&quot;&gt;
 //Alright, you&#39;ve got the gist of things. Where did your cat go again? Try calling for them.//
 
-[[What&#39;s my cat&#39;s name again?]]</tw-passagedata><tw-passagedata pid="8" name="Check Voicemail" tags="" position="1200,300" size="100,100">&lt;img src = &quot;images/Voicemails.jpg&quot; width=&quot;860px&quot;&gt;
+[[What&#39;s my cat&#39;s name again?]]</tw-passagedata><tw-passagedata pid="103" name="Check Voicemail" tags="" position="1200,300" size="100,100">&lt;img src = &quot;images/Voicemails.jpg&quot; width=&quot;860px&quot;&gt;
 “Huh, seems like some people were looking for me.&quot;
 
 //Click on whichever one you would like to check first.//
 
 [[Voicemail 1]] 
-[[Voicemail 2]] </tw-passagedata><tw-passagedata pid="9" name="Voicemail 1" tags="" position="1350,300" size="100,100">(set: $Clue1 to true)
+[[Voicemail 2]] </tw-passagedata><tw-passagedata pid="104" name="Voicemail 1" tags="" position="1350,300" size="100,100">(set: $Clue1 to true)
 Voicemail 1: Hi Sweetums~ you know I didn’t mean a word of what I said at the party right? I know we had a rough break up but I could never bring myself to hate you, that would be wayyyy too dramatic of me. I mean- sure you’re an absolute jerk and I don’t know why I bother &#39;&#39;trying&#39;&#39; to stay friends with your no good- *Deep breath* God I’m getting all worked up again and you’re not even here. I’ll talk to you later. Bye. 
 
 *Beeep*
@@ -82,75 +476,75 @@ Voicemail 1: Hi Sweetums~ you know I didn’t mean a word of what I said at the 
 
 [[Exit Voicemail]] 
 
-(if: ($Clue1 is true) and ($Clue2 is true) and ($Clue3 is true) and ($Clue4 is true) and ($Clue5 is true) and ($Clue6 is true) and ($Clue7 is true) and ($Clue8 is true)) [ [[Solve the Case]]]</tw-passagedata><tw-passagedata pid="10" name="Voicemail 2" tags="" position="1350,450" size="100,100">(set: $Clue2 to true)
+(if: ($Clue1 is true) and ($Clue2 is true) and ($Clue3 is true) and ($Clue4 is true) and ($Clue5 is true) and ($Clue6 is true) and ($Clue7 is true) and ($Clue8 is true)) [ [[Solve the Case]]]</tw-passagedata><tw-passagedata pid="105" name="Voicemail 2" tags="" position="1300,600" size="100,100">(set: $Clue2 to true)
 Voicemail 2: Hey Cuz, I didn’t say anything last night ‘cause it was your birthday party, but  this is like the 100th time I’ve called you. You know you still owe me mad cash yeah? Call me back before I do something we’re both gonna regret. I need my money now.
 
 [[Voicemail 1]] 
 
 [[Exit Voicemail]] 
 
-(if: ($Clue1 is true) and ($Clue2 is true) and ($Clue3 is true) and ($Clue4 is true) and ($Clue5 is true) and ($Clue6 is true) and ($Clue7 is true) and ($Clue8 is true)) [ [[Solve the Case]]]</tw-passagedata><tw-passagedata pid="11" name="Exit Voicemail" tags="" position="1500,350" size="100,100">&lt;img src = &quot;images/Voicemails.jpg&quot; width=&quot;860px&quot;&gt;
+(if: ($Clue1 is true) and ($Clue2 is true) and ($Clue3 is true) and ($Clue4 is true) and ($Clue5 is true) and ($Clue6 is true) and ($Clue7 is true) and ($Clue8 is true)) [ [[Solve the Case]]]</tw-passagedata><tw-passagedata pid="106" name="Exit Voicemail" tags="" position="1500,350" size="100,100">&lt;img src = &quot;images/Voicemails.jpg&quot; width=&quot;860px&quot;&gt;
 $Kitty: “You’re not very popular are you?”
 
-[[&quot;You can talk?&quot;]]</tw-passagedata><tw-passagedata pid="12" name="&quot;You can talk?&quot;" tags="" position="1625,350" size="100,100">&lt;img src = &quot;images/Voicemails.jpg&quot; width=&quot;860px&quot;&gt;
+[[&quot;You can talk?&quot;]]</tw-passagedata><tw-passagedata pid="107" name="&quot;You can talk?&quot;" tags="" position="1625,350" size="100,100">&lt;img src = &quot;images/Voicemails.jpg&quot; width=&quot;860px&quot;&gt;
 $Kitty: “Sure can, you just haven’t been able to understand me, but now that you’re finally dead you can!”
 
 (if: ($Clue1 is true) and ($Clue2 is true) and ($Clue3 is true) and ($Clue4 is true) and ($Clue5 is true) and ($Clue6 is true) and ($Clue7 is true) and ($Clue8 is true)) [ [[Solve the Case]]]
 
-[[MC: “You seem a bit too happy about this.”|sus cat]]
+[[“You seem a bit too happy about this.”|sus cat]]
 
-</tw-passagedata><tw-passagedata pid="13" name="sus cat" tags="" position="1775,350" size="100,100">$Kitty: “It’s nice to feel understood for once. Anyways, let’s look for clues. Do you want to check upstairs first or downstairs?”
+</tw-passagedata><tw-passagedata pid="108" name="sus cat" tags="" position="1775,350" size="100,100">$Kitty: “It’s nice to feel understood for once. Anyways, let’s look for clues. Do you want to check upstairs first or downstairs?”
 
 [[Go Upstairs]]
 
-[[Go Downstairs]]</tw-passagedata><tw-passagedata pid="14" name="Go Upstairs" tags="" position="1950,500" size="100,100">$Kitty: &quot;Okay, up we go, do you want to check the bathroom, your bedroom, or your office first?&quot;
+[[Go Downstairs]]</tw-passagedata><tw-passagedata pid="109" name="Go Upstairs" tags="" position="1950,500" size="100,100">$Kitty: &quot;Okay, up we go, do you want to check the bathroom, your bedroom, or your office first?&quot;
 
 [[Bathroom]]
 [[Bedroom]]
-[[Office]]</tw-passagedata><tw-passagedata pid="15" name="Go Downstairs" tags="" position="1950,350" size="100,100">Kitty: “Okay, do you want to go to the kitchen or living room first?”
+[[Office]]</tw-passagedata><tw-passagedata pid="110" name="Go Downstairs" tags="" position="1950,350" size="100,100">Kitty: “Okay, do you want to go to the kitchen or living room first?”
 
 [[Kitchen]]
 [[Living Room]]
-</tw-passagedata><tw-passagedata pid="16" name="Bathroom" tags="" position="1575,600" size="100,100">&lt;img src = &quot;images/Bathroom.jpg&quot; width=&quot;860px&quot;&gt;
+</tw-passagedata><tw-passagedata pid="111" name="Bathroom" tags="" position="1575,600" size="100,100">&lt;img src = &quot;images/Bathroom.jpg&quot; width=&quot;860px&quot;&gt;
 $Kitty: “The bathroom stinks, I don’t think you’ve emptied my litterbox in a while… Maybe we should skip this room?”
 
 
 [[Go to a Different Room]]
 
-[[Inspect Litter Box]]</tw-passagedata><tw-passagedata pid="17" name="Bedroom" tags="" position="1700,600" size="100,100">&lt;img src = &quot;images/Bedroom.jpg&quot; width=&quot;860px&quot;&gt;
+[[Inspect Litter Box]]</tw-passagedata><tw-passagedata pid="112" name="Bedroom" tags="" position="1700,600" size="100,100">&lt;img src = &quot;images/Bedroom.jpg&quot; width=&quot;860px&quot;&gt;
 $Kitty: &quot;There&#39;s a lot to looka at in here. What do you want to check out first&quot;
 
 [[Your bed]]
 [[The Cat Bed]]
 [[Photo Collection]]
 
-</tw-passagedata><tw-passagedata pid="18" name="Office" tags="" position="1875,600" size="100,100">&lt;img src = &quot;images/Office.jpg&quot; width=&quot;860px&quot;&gt;
+</tw-passagedata><tw-passagedata pid="113" name="Office" tags="" position="1875,600" size="100,100">&lt;img src = &quot;images/Office.jpg&quot; width=&quot;860px&quot;&gt;
 //Your office is a bit of a mess.//
 
 [[Check the pile of books on the floor]]
 [[Check your diary]]
-[[Check your laptop]]</tw-passagedata><tw-passagedata pid="19" name="Kitchen" tags="" position="2400,300" size="100,100">&lt;img src = &quot;images/Kitchen.jpg&quot; width=&quot;860px&quot;&gt;
+[[Check your laptop]]</tw-passagedata><tw-passagedata pid="114" name="Kitchen" tags="" position="2400,300" size="100,100">&lt;img src = &quot;images/Kitchen.jpg&quot; width=&quot;860px&quot;&gt;
 
 
 [[Check fridge]]
 [[Inspect solo cup]]
 [[Go to a different room]]
-</tw-passagedata><tw-passagedata pid="20" name="Living Room" tags="" position="2100,325" size="100,100">&lt;img src = &quot;images/LivingRoom.jpg&quot;&gt;
+</tw-passagedata><tw-passagedata pid="115" name="Living Room" tags="" position="2100,325" size="100,100">&lt;img src = &quot;images/LivingRoom.jpg&quot;&gt;
 The living room looks different than you remember.
 
 [[Check the broken pot]]
 [[Check the toy box]]
 [[Something&#39;s missing...]]
-[[Go to a different room]] </tw-passagedata><tw-passagedata pid="21" name="Go to a Different Room" tags="" position="1500,475" size="100,100">[[Bathroom]]
+[[Go to a different room]] </tw-passagedata><tw-passagedata pid="116" name="Go to a Different Room" tags="" position="1500,475" size="100,100">[[Bathroom]]
 [[Bedroom]]
 [[Office]]
-[[Go Downstairs]]</tw-passagedata><tw-passagedata pid="22" name="Inspect Litter Box" tags="" position="1600,750" size="100,100">$Kitty: “Oh, ew! It smells even worse up close.”
+[[Go Downstairs]]</tw-passagedata><tw-passagedata pid="117" name="Inspect Litter Box" tags="" position="1600,750" size="100,100">$Kitty: “Oh, ew! It smells even worse up close.”
 
-[[“Yeah, maybe we should’ve skipped that after all.”|skip]]</tw-passagedata><tw-passagedata pid="23" name="skip" tags="" position="1600,900" size="100,100">$Kitty: “You think? Lets get out of here.”
+[[“Yeah, maybe we should’ve skipped that after all.”|skip]]</tw-passagedata><tw-passagedata pid="118" name="skip" tags="" position="1600,900" size="100,100">$Kitty: “You think? Lets get out of here.”
 
 [[Bedroom]]
 [[Office]]
-[[Go Downstairs]] </tw-passagedata><tw-passagedata pid="24" name="Your bed" tags="" position="1762.5,725" size="100,100">(set: $Clue4 to true)
+[[Go Downstairs]] </tw-passagedata><tw-passagedata pid="119" name="Your bed" tags="" position="1762.5,725" size="100,100">(set: $Clue4 to true)
 You check your own bed. It’s a full queen size, currently for you and you alone.
 
 $Kitty: “Probably would be lonely having the whole thing to yourself recently, right? Such a shame you two had to break up like that, all sudden and messy like that.”
@@ -158,95 +552,95 @@ $Kitty: “Probably would be lonely having the whole thing to yourself recently,
 [[“I’d rather not get into that now of all times, being dead and all. I can’t even apologize to her now.”|apologize]]
 
 
-(if: ($Clue1 is true) and ($Clue2 is true) and ($Clue3 is true) and ($Clue4 is true) and ($Clue5 is true) and ($Clue6 is true) and ($Clue7 is true) and ($Clue8 is true)) [ [[Solve the Case]]]</tw-passagedata><tw-passagedata pid="25" name="The Cat Bed" tags="" position="1775,850" size="100,100">You check the cat bed. You’ve had this bed for a few years now, receiving it as a gift after first purchasing $Kitty’s bed. 
+(if: ($Clue1 is true) and ($Clue2 is true) and ($Clue3 is true) and ($Clue4 is true) and ($Clue5 is true) and ($Clue6 is true) and ($Clue7 is true) and ($Clue8 is true)) [ [[Solve the Case]]]</tw-passagedata><tw-passagedata pid="120" name="The Cat Bed" tags="" position="1775,850" size="100,100">You check the cat bed. You’ve had this bed for a few years now, receiving it as a gift after first purchasing $Kitty’s bed. 
 
 [[inspect]]
-</tw-passagedata><tw-passagedata pid="26" name="Photo Collection" tags="" position="1775,975" size="100,100">(set: $Clue3 to true)
+</tw-passagedata><tw-passagedata pid="121" name="Photo Collection" tags="" position="1775,975" size="100,100">(set: $Clue3 to true)
 You go over to your collection of family photos. Most contain your full family. Well, almost your full family, at least.
 
 [[continue on]]
 
 
-(if: ($Clue1 is true) and ($Clue2 is true) and ($Clue3 is true) and ($Clue4 is true) and ($Clue5 is true) and ($Clue6 is true) and ($Clue7 is true) and ($Clue8 is true)) [ [[Solve the Case]]]</tw-passagedata><tw-passagedata pid="27" name="apologize" tags="" position="1900,850" size="100,100">$Kitty: “Fair enough (as if you ever would).”
+(if: ($Clue1 is true) and ($Clue2 is true) and ($Clue3 is true) and ($Clue4 is true) and ($Clue5 is true) and ($Clue6 is true) and ($Clue7 is true) and ($Clue8 is true)) [ [[Solve the Case]]]</tw-passagedata><tw-passagedata pid="122" name="apologize" tags="" position="1925,850" size="100,100">$Kitty: “Fair enough (as if you ever would).”
 
 Look at [[The Cat Bed]] 
 Look at [[Photo Collection]] 
-[[Go to a Different Room]] </tw-passagedata><tw-passagedata pid="28" name="inspect" tags="" position="1900,975" size="100,100">$Kitty: “Well this is just my home. Not much to notice here.”
+[[Go to a Different Room]] </tw-passagedata><tw-passagedata pid="123" name="inspect" tags="" position="1900,975" size="100,100">$Kitty: “Well this is just my home. Not much to notice here.”
 
 You can’t help but recognize the tattered state the bed is in, along with the fact it’s only a fraction of his size.
 
 check [[Your bed]] 
 check [[Photo Collection]] 
 [[Go to a Different Room]]
-</tw-passagedata><tw-passagedata pid="29" name="continue on" tags="" position="1775,1100" size="100,100">$Kitty: “You and your cousin have been at each other’s throats for as long as I’ve been around, I’m sure it wouldn’t even surprise him that you’ve hid his face in all these photos.”
+</tw-passagedata><tw-passagedata pid="124" name="continue on" tags="" position="1775,1100" size="100,100">$Kitty: “You and your cousin have been at each other’s throats for as long as I’ve been around, I’m sure it wouldn’t even surprise him that you’ve hid his face in all these photos.”
 
 [[“Man, guess we didn&#39;t have a very good relationship. What a shame.”|shame]]
 
-</tw-passagedata><tw-passagedata pid="30" name="shame" tags="" position="1900,1225" size="100,100">$Kitty: “I’m still surprised you actually invited him to your party last night, I would’ve thought it would be the fall of civilization before you invited him over.”
+</tw-passagedata><tw-passagedata pid="125" name="shame" tags="" position="1900,1225" size="100,100">$Kitty: “I’m still surprised you actually invited him to your party last night, I would’ve thought it would be the fall of civilization before you invited him over.”
 
 check [[Your bed]] 
 check [[The Cat Bed]] 
-[[Go to a Different Room]]</tw-passagedata><tw-passagedata pid="31" name="Check the pile of books on the floor" tags="" position="2025,925" size="100,100">Some of the books are all ripped up.
+[[Go to a Different Room]]</tw-passagedata><tw-passagedata pid="126" name="Check the pile of books on the floor" tags="" position="2050,950" size="100,100">Some of the books are all ripped up.
 One of them was an anniversary gift.
 One of them is called &quot;How to Take Care of Your Cat.&quot;
 
 [[Check your diary]] 
 [[Check your laptop]] 
-[[Go to a Different Room]] </tw-passagedata><tw-passagedata pid="32" name="Check your diary" tags="" position="2175,550" size="100,100">The most recent entry in your diary reads: “I should break up with my girlfriend. She honestly sucks and keeps wanting to go out, but I just don’t have the money for that. Plus she’s been acting really strange lately. I can’t tell what’s up but I just have a feeling she’s up to something”
+[[Go to a Different Room]] </tw-passagedata><tw-passagedata pid="127" name="Check your diary" tags="" position="2175,550" size="100,100">The most recent entry in your diary reads: “I should break up with my girlfriend. She honestly sucks and keeps wanting to go out, but I just don’t have the money for that. Plus she’s been acting really strange lately. I can’t tell what’s up but I just have a feeling she’s up to something”
 $Kitty: “Hmm… sus.”
 
 [[Check the pile of books on the floor]] 
 [[Check your laptop]] 
 [[Go to a Different Room]] 
-</tw-passagedata><tw-passagedata pid="33" name="Check your laptop" tags="" position="2075,675" size="100,100">(set: $Clue5 to true)
+</tw-passagedata><tw-passagedata pid="128" name="Check your laptop" tags="" position="2075,675" size="100,100">(set: $Clue5 to true)
 On your laptop screen, you see your bank account, with a balance of -$5000. All the recent transactions have been from online gambling sites. You also see a request for money from your cousin, Antonio.
 
 $Kitty: “Wow, all this money spent gambling and yet you still haven’t bought me a new toy.”
 
 [[Memory: your cousin]]
 
-(if: ($Clue1 is true) and ($Clue2 is true) and ($Clue3 is true) and ($Clue4 is true) and ($Clue5 is true) and ($Clue6 is true) and ($Clue7 is true) and ($Clue8 is true)) [ [[Solve the Case]]]</tw-passagedata><tw-passagedata pid="34" name="Memory: your cousin" tags="" position="2200,775" size="100,100">You called your cousin one night. “Hey cuz, I know I said I’d pay you back, but I just need a little more.&quot;
+(if: ($Clue1 is true) and ($Clue2 is true) and ($Clue3 is true) and ($Clue4 is true) and ($Clue5 is true) and ($Clue6 is true) and ($Clue7 is true) and ($Clue8 is true)) [ [[Solve the Case]]]</tw-passagedata><tw-passagedata pid="129" name="Memory: your cousin" tags="" position="2200,775" size="100,100">You called your cousin one night. “Hey cuz, I know I said I’d pay you back, but I just need a little more.&quot;
 Antonio: &quot;More money? Didn&#39;t I give you some yesterday?&quot;
 You: &quot;I know, I know. I can win it all back, I promise”
 Antonio: “That’s what you said last time, you jerk.”
 
 [[“Forget about your new toy, I obviously messed up.”]]
 
-</tw-passagedata><tw-passagedata pid="35" name="“Forget about your new toy, I obviously messed up.”" tags="" position="2200,900" size="100,100">$Kitty: &quot;Well, that&#39;s not my fault.&quot;
+</tw-passagedata><tw-passagedata pid="130" name="“Forget about your new toy, I obviously messed up.”" tags="" position="2200,900" size="100,100">$Kitty: &quot;Well, that&#39;s not my fault.&quot;
 
 [[Check the pile of books on the floor]] 
 [[Check your diary]] 
-[[Go to a Different Room]] </tw-passagedata><tw-passagedata pid="36" name="Check the broken pot" tags="" position="2150,50" size="100,100">&lt;img src = &quot;images/LivingRoom.jpg&quot; width=&quot;860px&quot;&gt;
+[[Go to a Different Room]] </tw-passagedata><tw-passagedata pid="131" name="Check the broken pot" tags="" position="2150,50" size="100,100">&lt;img src = &quot;images/LivingRoom.jpg&quot; width=&quot;860px&quot;&gt;
 (set: $Clue8 to true)
 You notice the pot, a gift for your first anniversary, is shattered in the corner of the room.
 
 [[“I don’t remember this happening… was there a fight last night?”|fight]]
 
 
-(if: ($Clue1 is true) and ($Clue2 is true) and ($Clue3 is true) and ($Clue4 is true) and ($Clue5 is true) and ($Clue6 is true) and ($Clue7 is true) and ($Clue8 is true)) [ [[Solve the Case]]]</tw-passagedata><tw-passagedata pid="37" name="Check the toy box" tags="" position="2300,200" size="100,100">It&#39;s empty. You haven&#39;t gotten any toys in a while.
+(if: ($Clue1 is true) and ($Clue2 is true) and ($Clue3 is true) and ($Clue4 is true) and ($Clue5 is true) and ($Clue6 is true) and ($Clue7 is true) and ($Clue8 is true)) [ [[Solve the Case]]]</tw-passagedata><tw-passagedata pid="132" name="Check the toy box" tags="" position="2300,200" size="100,100">It&#39;s empty. You haven&#39;t gotten any toys in a while.
 
 $Kitty: “Huh, wonder how I haven’t died of boredom.”
 
 [[Check the broken pot]] 
 [[Something&#39;s missing...]] 
 [[Kitchen]] 
-[[Go Upstairs]] </tw-passagedata><tw-passagedata pid="38" name="Something&#39;s missing..." tags="" position="2300,50" size="100,100">(set: $Clue7 to true)
-MC: “I could’ve sworn I had an armchair here, did something happen to it last night?”
+[[Go Upstairs]] </tw-passagedata><tw-passagedata pid="133" name="Something&#39;s missing..." tags="" position="2300,50" size="100,100">(set: $Clue7 to true)
+You: “I could’ve sworn I had an armchair here, did something happen to it last night?”
 
 $Kitty: “Oh yeah… That was Antonio. He took a moment when no one was around and took it out to his car, mumbling something about taking what he’s owed. Of course, I tried my absolute hardest to stop him, but I was unsuccessful, being a cat and all.”
 
 [[“Wow, I’m honestly surprised. Didn’t think he’d have it in him to actually do something like that. And now there’s just another reason he will forever lack my forgiveness.”]]
 
-(if: ($Clue1 is true) and ($Clue2 is true) and ($Clue3 is true) and ($Clue4 is true) and ($Clue5 is true) and ($Clue6 is true) and ($Clue7 is true) and ($Clue8 is true)) [ [[Solve the Case]]]</tw-passagedata><tw-passagedata pid="39" name="fight" tags="" position="2000,50" size="100,100">Kitty: “Who knows, once you started to have your blow up with your woman, everyone seemed to find the best way out. The tension was so strong you could almost see it spread across the house.”
+(if: ($Clue1 is true) and ($Clue2 is true) and ($Clue3 is true) and ($Clue4 is true) and ($Clue5 is true) and ($Clue6 is true) and ($Clue7 is true) and ($Clue8 is true)) [ [[Solve the Case]]]</tw-passagedata><tw-passagedata pid="134" name="fight" tags="" position="2000,50" size="100,100">Kitty: “Who knows, once you started to have your blow up with your woman, everyone seemed to find the best way out. The tension was so strong you could almost see it spread across the house.”
 
-[[“Was it really that bad?”]]</tw-passagedata><tw-passagedata pid="40" name="“Was it really that bad?”" tags="" position="2000,175" size="100,100">Your cat stares at you; you can almost feel his judgment.
+[[“Was it really that bad?”]]</tw-passagedata><tw-passagedata pid="135" name="“Was it really that bad?”" tags="" position="2000,175" size="100,100">Your cat stares at you; you can almost feel his judgment.
 
 [[Check the toy box]] 
 [[Something&#39;s missing...]] 
 [[Kitchen]] 
-[[Go Upstairs]] </tw-passagedata><tw-passagedata pid="41" name="What&#39;s my cat&#39;s name again?" tags="" position="1000,575" size="100,100">(set: $Kitty to (prompt: &quot;Cat&#39;s name&quot;, &quot;&quot;) )
+[[Go Upstairs]] </tw-passagedata><tw-passagedata pid="136" name="What&#39;s my cat&#39;s name again?" tags="" position="1000,575" size="100,100">(set: $Kitty to (prompt: &quot;Cat&#39;s name&quot;, &quot;&quot;) )
 
-[[Call cat]] </tw-passagedata><tw-passagedata pid="42" name="Clues" tags="" position="425,425" size="100,100">(if:(history:)contains &quot;Voicemail 1&quot;)[Girlfriend-er,, ex-girlfriend seems to still hold grudges against me from our last argument..]
+[[Call cat]] </tw-passagedata><tw-passagedata pid="137" name="Clues" tags="" position="425,425" size="100,100">(if:(history:)contains &quot;Voicemail 1&quot;)[Girlfriend-er,, ex-girlfriend seems to still hold grudges against me from our last argument..]
 (else:)[(set:$Clue1 to false)No evidence has been collected. ]
 
 (if:(history:)contains &quot;Voicemail 2&quot;)[My cousin seems desperate to get his money back.. perhaps he had already made his move..]
@@ -265,54 +659,56 @@ $Kitty: “Oh yeah… That was Antonio. He took a moment when no one was around 
 
 
 (link: &#39;Back&#39;)[(goto: (history:)&#39;s last)]
-</tw-passagedata><tw-passagedata pid="43" name="start" tags="" position="675,475" size="100,100">&lt;img src = &quot;images/TitleScreen.jpg&quot; width=&quot;860px&quot;&gt;
+</tw-passagedata><tw-passagedata pid="138" name="start" tags="" position="675,475" size="100,100">&lt;img src = &quot;images/TitleScreen.jpg&quot; width=&quot;860px&quot;&gt;
 
-(align:&quot;&lt;==&gt;&quot;)+(box:&quot;X=&quot;)[[Start|stairwell 1]] </tw-passagedata><tw-passagedata pid="44" name="Check fridge" tags="" position="2325,450" size="100,100">On the fridge sits a note with a list of your allergens.
+(align:&quot;&lt;==&gt;&quot;)+(box:&quot;X=&quot;)[[Start|stairwell 1]] </tw-passagedata><tw-passagedata pid="139" name="Check fridge" tags="" position="2325,450" size="100,100">On the fridge sits a note with a list of your allergens.
 
-[[Memory: Groceries]]</tw-passagedata><tw-passagedata pid="45" name="Inspect solo cup" tags="" position="2325,600" size="100,100">The solo cup has left a sticky mess on the ground next to the bag of basic cat food.
+[[Memory: Groceries]]</tw-passagedata><tw-passagedata pid="140" name="Inspect solo cup" tags="" position="2325,600" size="100,100">The solo cup has left a sticky mess on the ground next to the bag of basic cat food.
 
 [[Memory: Try this drink]]
-</tw-passagedata><tw-passagedata pid="46" name="Memory: Groceries" tags="" position="2450,575" size="100,100">Your aunt called again. 
+</tw-passagedata><tw-passagedata pid="141" name="Memory: Groceries" tags="" position="2450,575" size="100,100">Your aunt called again. 
 
 Aunt: “Hi Honey, I’m telling Antonio to bring you more groceries again, I don’t think you’ve been eating enough lately. I know you’re always busy with work but that’s no excuse.”
 You: “Thanks Auntie you&#39;re the best ”
 
 [[God I wish she would stop making him send me stuff I hate seeing his stupid face. And I can’t even eat any of this, basically everything on this list is something I can’t eat and that’s all he bought, why would he do this?]]
-</tw-passagedata><tw-passagedata pid="47" name="God I wish she would stop making him send me stuff I hate seeing his stupid face. And I can’t even eat any of this, basically everything on this list is something I can’t eat and that’s all he bought, why would he do this?" tags="" position="2450,700" size="100,100">$Kitty: &quot;Well hey, at least you can eat all of thes now without having to worry&quot;
-You: &quot;I think it&#39;d pass right through me&quot;
+</tw-passagedata><tw-passagedata pid="142" name="God I wish she would stop making him send me stuff I hate seeing his stupid face. And I can’t even eat any of this, basically everything on this list is something I can’t eat and that’s all he bought, why would he do this?" tags="" position="2450,700" size="100,100">$Kitty: &quot;Well hey, at least you can eat all of thes now without having to worry&quot;
+You: &quot;I think it&#39;d pass right through me.&quot;
 
-[[Kitchen]] </tw-passagedata><tw-passagedata pid="48" name="Memory: Try this drink" tags="" position="2325,725" size="100,100">(set: $Clue6 to true)
+[[Kitchen]] </tw-passagedata><tw-passagedata pid="143" name="Memory: Try this drink" tags="" position="2325,725" size="100,100">(set: $Clue6 to true)
 Ex-Girlfriend: &quot;You should really drink this I promise it’s to die for&quot;
 
 [[&quot;She wouldn&#39;t poison me, right?&quot;]]
 
 
-(if: ($Clue1 is true) and ($Clue2 is true) and ($Clue3 is true) and ($Clue4 is true) and ($Clue5 is true) and ($Clue6 is true) and ($Clue7 is true) and ($Clue8 is true)) [ [[Solve the Case]]]</tw-passagedata><tw-passagedata pid="49" name="&quot;She wouldn&#39;t poison me, right?&quot;" tags="" position="2325,850" size="100,100">$Kitty: “I sure would… if I were her of course”
+(if: ($Clue1 is true) and ($Clue2 is true) and ($Clue3 is true) and ($Clue4 is true) and ($Clue5 is true) and ($Clue6 is true) and ($Clue7 is true) and ($Clue8 is true)) [ [[Solve the Case]]]</tw-passagedata><tw-passagedata pid="144" name="&quot;She wouldn&#39;t poison me, right?&quot;" tags="" position="2325,850" size="100,100">$Kitty: “I sure would… if I were her of course”
 
 [[Kitchen]]
-</tw-passagedata><tw-passagedata pid="50" name="Go to a different room" tags="" position="2100,1100" size="100,100">[[Living Room]] 
+</tw-passagedata><tw-passagedata pid="145" name="Go to a different room" tags="" position="2100,1100" size="100,100">[[Living Room]] 
 [[Kitchen]] 
-[[Go Upstairs]] </tw-passagedata><tw-passagedata pid="51" name="“Wow, I’m honestly surprised. Didn’t think he’d have it in him to actually do something like that. And now there’s just another reason he will forever lack my forgiveness.”" tags="" position="2425,175" size="100,100">$Kitty: &quot;I feel like if anything this just shows how much of his forgiveness you don&#39;t have after what you did&quot;
+[[Go Upstairs]] </tw-passagedata><tw-passagedata pid="146" name="“Wow, I’m honestly surprised. Didn’t think he’d have it in him to actually do something like that. And now there’s just another reason he will forever lack my forgiveness.”" tags="" position="2425,175" size="100,100">$Kitty: &quot;I feel like if anything this just shows how much of his forgiveness you don&#39;t have after what you did&quot;
 
 You: &quot;...&quot;
 
-[[Go to a different room]] </tw-passagedata><tw-passagedata pid="52" name="Solve the Case" tags="" position="2925,450" size="100,100">Congratulations! You have collected all the clues! Based on your findings, who do you think was responsible for your murder?
+[[Check the broken pot]] 
+[[Check the toy box]] 
+[[Go to a different room]] </tw-passagedata><tw-passagedata pid="147" name="Solve the Case" tags="" position="2925,450" size="100,100">Congratulations! You have collected all the clues! Based on your findings, who do you think was responsible for your murder?
 
 [[Antonio]]
 [[My Ex]]
-[[Someone Else]]</tw-passagedata><tw-passagedata pid="53" name="Antonio" tags="" position="2925,575" size="100,100">Nope, Antonio was pretty unhappy with you, but he was not your murderer. Who else could it be?
+[[Someone Else]]</tw-passagedata><tw-passagedata pid="148" name="Antonio" tags="" position="2925,575" size="100,100">Nope, Antonio was pretty unhappy with you, but he was not your murderer. Who eles could it be?
 
-[[Solve the Case]] </tw-passagedata><tw-passagedata pid="54" name="My Ex" tags="" position="3050,575" size="100,100">Your ex certainly hated you, but someone ele got to you first. Any guesses as to who it might be?
+[[Solve the Case]] </tw-passagedata><tw-passagedata pid="149" name="My Ex" tags="" position="3050,575" size="100,100">Your ex certainly hated you, but someone ele got to you first. Any guesses as to who it might be?
 
-[[Solve the Case]] </tw-passagedata><tw-passagedata pid="55" name="Someone Else" tags="" position="2800,575" size="100,100">Oh? Have you discovered a third suspect? And who might that be?
+[[Solve the Case]] </tw-passagedata><tw-passagedata pid="150" name="Someone Else" tags="" position="2800,575" size="100,100">Oh? Have you discovered a third suspect? And who might that be?
 
 (set: $Killer to (prompt: &quot;Killer:&quot;, &quot;&quot;) )
 
-[[check your guess]]</tw-passagedata><tw-passagedata pid="56" name="check your guess" tags="" position="2800,700" size="100,100">(if: $Killer is $Kitty) [All along, it was your belowed $Kitty! You figured it out! 
+[[check your guess]]</tw-passagedata><tw-passagedata pid="151" name="check your guess" tags="" position="2800,700" size="100,100">(if: $Killer is $Kitty) [All along, it was your beloved $Kitty! You figured it out! 
 [[How could they?!]]
 ]
 (else:) [That&#39;s not right 
-[[Solve the Case]]]</tw-passagedata><tw-passagedata pid="57" name="How could they?!" tags="" position="2800,825" size="100,100">$Kitty: “Alright, well this was fun, but to be honest…”
+[[Solve the Case]]]</tw-passagedata><tw-passagedata pid="152" name="How could they?!" tags="" position="2800,825" size="100,100">$Kitty: “Alright, well this was fun, but to be honest…”
 
 
 Then you hear a voice shout from outside. “Here Penny!”
